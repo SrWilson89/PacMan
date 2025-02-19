@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comecocos Mejorado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="menu">
+            <h1>Comecocos</h1>
+            <button id="startButton">Comenzar Juego</button>
+            <button id="instructionsButton">Instrucciones</button>
+        </div>
+        <div id="gameUI" class="hidden">
+            <canvas id="gameCanvas"></canvas>
+            <div id="score">Puntos: 0</div>
+            <div id="lives">Vidas: 3</div>
+            <div id="powerUpStatus"></div>
+            <button id="pauseButton">Pausa</button>
+        </div>
+        <div id="instructions" class="hidden">
+            <h2>Instrucciones</h2>
+            <p>Usa las flechas del teclado para mover a Pacman.</p>
+            <p>Recoge todos los puntos para ganar.</p>
+            <p>¡Cuidado con los fantasmas!</p>
+            <button id="backButton">Volver al Menú</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

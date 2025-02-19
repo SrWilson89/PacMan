@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.game-container {
+    text-align: center;
+}
+
+canvas {
+    border: 2px solid #fff;
+    max-width: 100%;
+    height: auto;
+}
+
+#menu, #instructions {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+#score, #lives, #powerUpStatus {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    canvas {
+        width: 90%;
+    }
+}
